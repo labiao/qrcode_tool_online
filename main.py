@@ -16,6 +16,7 @@ def home():
 #     data = f.read()
 #     f.close()
 #     return data
+    # return '<img src="/static/qr.png" />' 
 
     return flask.render_template('qr_tool.html')
 
@@ -31,11 +32,8 @@ def qr():
     # f = open("index.html", "r", encoding="utf-8")
     # data = f.read()
     # f.close()
-    # return '<img src="/static/qr.png" />' 
-    f = open("../index.html", "r", encoding="utf-8")
-    data = f.read()
-    f.close()
-    return data
+    return '<img src="/static/qr.png" />' 
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
